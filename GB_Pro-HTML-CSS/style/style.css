@@ -49,6 +49,12 @@ body {
     background-color: transparent;
 }
 
+.header__menu-button:focus~.header__navigation,
+.header__menu-button:active~.header__navigation,
+.header__navigation:hover{
+    display: block;
+}
+
 .header__link {
     margin: 0 0 0 33px;
 }
@@ -57,7 +63,10 @@ body {
     width: 232px;
     height: 764px;
     background-color: var(--white-color); 
-
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 75px;
 }
 .header__navigation-menu{
     padding: 37px 0 0 34px;
@@ -121,8 +130,18 @@ body {
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase; 
+    position: relative;
+    width: 377px;
 }
 
+.brand__heading::before{
+    content: '';
+    width: 12px;
+    height: 112px;
+    background-color: #F16D7F;
+    position: absolute;
+    left: -26px;
+}
 
 .brand__heading-text {
     font-size: 37px;
