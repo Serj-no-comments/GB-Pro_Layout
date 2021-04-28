@@ -59,6 +59,20 @@ body {
     margin: 0 0 0 33px;
 }
 
+.link-cart{
+    position: relative;
+}
+
+.link-cart::after{
+    content: '2';
+    color: var(--white-color);
+    padding: 2px 6px 2px 6px;
+    background-color: #F16D7F;
+    position: absolute;
+    border-radius: 10px;
+    top: -25px;
+    right: -10px;
+}
 .header__navigation { 
     width: 232px;
     height: 764px;
@@ -119,10 +133,7 @@ body {
     background-color: var(--pink-color);
     flex-grow: 1;
     padding: 0 0 0 92px;
-    display: flex;
-    align-items: center;
-    
-    
+    padding-top: 290px;   
 }
 
 .brand__heading {
@@ -131,7 +142,6 @@ body {
     line-height: 58px;
     text-transform: uppercase; 
     position: relative;
-    width: 377px;
 }
 
 .brand__heading::before{
@@ -146,7 +156,7 @@ body {
 .brand__heading-text {
     font-size: 37px;
     font-weight: 700;
-    line-height: 44px;
+    line-height: 58px;
     text-transform: uppercase; 
 }
 .brand__heading-text-pink{
@@ -249,6 +259,7 @@ body {
 
 .products__item-img{
     margin-bottom: 25px;
+    position: relative;
 }
 
 .products__item-heading{
@@ -281,6 +292,25 @@ body {
     display: none;
 }
 
+.products__item-buy{
+    position: relative;
+}
+.products__item-cart{
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 13px 13px 13px 50px;
+    border: 1px solid var(--white-color);
+    position: absolute;
+    left: 30.72%;
+    top: 40.12%;
+}
+
+.products__item-img:focus~.products__item-cart,
+.products__item-img:active~.products__item-cart,
+.products__item-cart:hover{
+    display: block;
+}
 .products__button{
     text-align: center;
     margin: 49px 0 95px 0;
@@ -333,6 +363,7 @@ body {
 
 .information{
     background-image: url(../img/beach.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -367,18 +398,17 @@ body {
 .information__feedback-head{
     font-size: 24px;
     line-height: 167.2%;
-    margin-bottom: 32px;
-}
-
-.information__feedback-head{
     text-transform: uppercase;
     font-weight: bold;
     font-weight: 700;
 }
 
 .information__feedback-text{
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 167.2%;
+    margin-bottom: 32px;
+    text-transform: uppercase;
 }
 
 .infornation__feedback-writer{
