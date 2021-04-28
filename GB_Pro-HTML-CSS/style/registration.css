@@ -1,0 +1,129 @@
+:root {
+    --black-color: #222222;
+    --pink-color: #F1E4E6;
+    --white-color:  #FBFBFB;
+}
+
+body {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.header__registration{
+    background-color: var(--pink-color);
+}
+
+.header__main{
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    height: 148px;
+    display: flex;
+    align-items: center;
+}
+
+.registration{
+    margin-top: 64px;
+    margin-bottom: 96px;
+    display: flex;
+}
+.registration__form{
+    margin-right: 130px;
+}
+
+.registration__blank-personal__head{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    opacity: 0.8;
+}
+.registration__blank-personal__input{
+    width: 360px;
+    height: 45px;
+    margin: 20px 0 20px 0;
+    opacity: 0.3;
+}
+
+.registration__blank-gender__text{
+    opacity: 0.7;
+}
+
+.registration__blank-gender{
+    padding-bottom: 33px;
+}
+
+::placeholder{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 12px 0 16px 16px;
+}
+
+.registration__blank-warning{
+    padding-bottom: 40px;
+    width: 360px;
+    opacity: 0.3;
+}
+
+.registration__blank-button{
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: #F16D7F;
+    padding: 16px 0 17px 13px;
+    width: 167px;
+    position: relative;
+}
+
+.registration__blank-button:after{
+    content: '';
+    position: absolute;
+    color: var(--white-color);
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/arrow.svg);
+    margin-left: 20px;
+    margin-top: 4px;
+    background-repeat: no-repeat;
+
+}
+
+.registration__privileges-apper{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+}
+.registration__privileges-text{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 21px;
+}
+
+.registration__privileges-list{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 16px;
+    position: relative;
+    margin-left: 43px;
+}
+
+.registration__privileges-list::before{
+    content: '';
+    position: absolute;
+    background-image: url(../img/checkmark.svg);
+    width: 20px;
+    height: 16px;
+    left: -43px;
+    top: 8px;
+}
